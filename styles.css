@@ -38,6 +38,10 @@ a{
     color: white;
 }
 
+hr{
+    color: black;
+}
+
 .header__container{
     display: flex;
     background-color: rgb(212, 212, 25);
@@ -231,5 +235,85 @@ nav{
 .about__right--img{
     width: 95%;
     border-radius: 22px;
+}
+
+/*MEET ARTSISTS*/
+
+#artist{
+    padding: 100px 0;
+}
+
+.artist__container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.artist__h2{
+    margin-bottom: 24px;
+}
+
+.artist__wrapper{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.artist__left--img{
+    height: 800px;
+    border-radius: 20px;
+    margin-left: 20%;
+    
+}
+.artist__left{
+    position: relative;
+}
+
+.artist__hover{
+    position: absolute;
+    top: -100px;
+    left: 105px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #0a05035b;
+    transition: all 600ms ease;
+    text-align: center;
+}
+
+.artist__hover--description{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 570px;
+    width: 90%;
+    margin-left: 30px;
+    height: 24%;
+    background-color: rgb(224, 178, 24);
+    border-radius: 20px;
+}
+.artist__hover:hover{
+    top: 1px;
+    opacity: 1;
+    transition: all 600ms ease;
+}
+.artist__hover--info{
+    margin-top: 20px;
+    margin-left:12px ;
+}
+.artist__hover--youtube{
+    margin-top: 20px;
+    margin-left: 12px;
+}
+
+.artist__right--img{
+    height: 360px;
+    border-radius: 20px;
+}
+
+.artist__right--img1{
+    margin-bottom: 20px;
 }
 
