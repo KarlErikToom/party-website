@@ -9,17 +9,21 @@
 
 h1{
     font-size: 74px;
+    color: white;
+
 }
 h5{
     font-size: 24px;
+    color: white;
 }
 small{
     font-size: 14px;
+    color: white;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .header__container{
@@ -29,6 +33,7 @@ a{
     padding: 16px 32px;
     padding-left: 300px;
     font-size: 20px;
+    height: 5vh;
 }
 
 .header__img{
@@ -41,101 +46,130 @@ margin-left: 16px;
 }
 
 
+#landing{
+    width: 100%;
+    height: 95vh;
+    position: relative;
+}
+
 /*NAVIGATION BAR*/
-
-
-
-.nav__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    font-size: 20px;
+nav{
+    padding: 8px 0;
+    max-width: 100%;
     
 }
+.nav__container{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 0 6%;
+    width: 90%;
+}
+
+.nav__brand{
+    font-size: 24px;
+    margin-top: 16px;
+    padding: 5px 0;
+}
+
+
 .nav__links{
     display: flex;
     list-style: none;
-    align-items: center;
+    margin-left: 25%;
+    
     
 }
 
 .nav__link{
-    margin-right: 24px;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
     
 }
 
 
-.nav__link--btn{
-    border-width: 0;
-    padding: 12px 0;
-    padding-left: 20px;
-    background-color: rgb(223, 150, 15);
+.nav__link--primary{
+    background: #ee5007;
+    border: 2px solid transparent;
     border-radius: 24px;
-
+    padding: 10px 20px;
 }
 
 
 /*LANDING*/
 
-#landing{
-    height: calc(100vh - 51px);
+.hero{
     position: relative;
-    
 }
-.landing__container{
-    position: absolute;
+
+.hero__main{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    z-index: 2;
-    width: 100%;
-    color: rgb(17, 14, 14);
+    margin: 254px 167px;
 }
 
-.landing__main{
-    margin: 240px 0 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center ;
+.btn{
+    margin-top: 24px;
 }
-
-.landing__main--h1{
-    margin-bottom: 48px;
-}
-
-.landing__info{
-    margin-top: 240px;
-    padding: 0 12px;
+.hero__bottom{
     display: flex;
     justify-content: space-around;
+    margin-top: 330px;
 }
-
-.landing__info--date{
-    display: flex;
-    margin-right: 24px;
-}
-
-.landing__info--place{
-    display: flex;
-    margin-right: 24px;
-}
-
-.landing__info--social{
+.hero__bottom--date{
     font-size: 24px;
-    
+    margin-bottom: 8px;
+    display: flex;
 }
-.custom__video{
-    
+
+.hero__bottom--place{
+    font-size: 24px;
+    margin-bottom: 8px;
+    display: flex;
+}
+.hero__bottom--social{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.hero__bottom--span{
+    color: white;
+}
+.fa-brands{
+    margin-right: 8px;
+    color: #ee5007;
+}
+.fa-clock{
+    color: #ee5007;
+}
+.fa-location-dot{
+    color: #ee5007;
+}
+
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
     object-fit: cover;
     width: 100%;
     height: 100%;
+    z-index: -1;
 }
 
-.fa-clock{
-    font-size: 24px;
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
 }
-.fa-location-dot{
-    font-size: 24px;
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
 }
