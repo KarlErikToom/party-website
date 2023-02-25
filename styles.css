@@ -6,11 +6,7 @@
     scroll-behavior: smooth;
 }
 
-.container{
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
+
 h1{
     font-size: 74px;
     color: white;
@@ -23,6 +19,9 @@ h2{
 
 h3{
     font-size: 24px;
+}
+h4{
+    font-size: 32px;
 }
 h5{
     font-size: 24px;
@@ -384,3 +383,106 @@ nav{
 
 
 /*SCHEDULE*/
+
+#schedule{
+    padding: 100px 0;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/nainoa-shizuru-unsplash-blur.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.schedule__h2{
+    margin-bottom: 24px;
+    color: white;
+}
+th{
+    font-size: 16px;
+    padding: 30px;
+    background-color: #ee5007;
+    
+}
+
+.th__row{
+    background-color: rgb(59, 56, 56);
+    width: 15%;
+    color: white;
+}
+td{
+    background-color: #2018155b;
+    padding: 10px;
+}
+td, th{
+   width: 350px;
+   padding: 30px;
+   text-align: center;
+   border: 1px solid black;
+   color: white;
+   
+}
+
+table{
+    width: 80%;
+    height: 500px;
+    border-collapse: collapse;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.table{
+    border-radius: 20px;
+}
+.schedule__container{
+    height: 60vh;
+}
+
+.schedule__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    
+    
+}
+
+
+
+
+.backround__color{
+    background-color: pink;
+}
+
+.backround__img{
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 35%;
+    height: 17vh;
+}
+
+.backround__img1{
+    width: 35%;
+    height: 17vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg);
+}
+
+.backround__img2{
+    width: 35%;
+    height: 17vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg);
+}
+
+.gray{
+    background-color: rgb(59, 56, 56);
+}
+
+.dj{
+    width: 22%;
+    height: 16vh;
+}
