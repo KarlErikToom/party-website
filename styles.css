@@ -6,7 +6,11 @@
     scroll-behavior: smooth;
 }
 
-
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
 h1{
     font-size: 74px;
     color: white;
@@ -377,3 +381,6 @@ nav{
     background-color: rgb(224, 178, 24);
     border-radius: 20px;
 }
+
+
+/*SCHEDULE*/
