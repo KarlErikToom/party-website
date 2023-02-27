@@ -508,11 +508,38 @@ table{
 }
 
 .plan__left{
+    position: relative;
     border: 5px dotted black;
     padding: 50px;
     margin: 0 12px;
     height: 95%;
     border-radius: 30px;
+}
+
+.plan__absolute{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    background-color: #ee5007;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    color: white;
+    
+}
+
+.plan__absolute--para{
+    font-size: 18px;
+    font-weight: bold;
+}
+.plan__absolute--span{
+    font-size: 32px;
+    font-weight: bold;
 }
 
 .plan__right{
