@@ -588,4 +588,10 @@ table{
     color: rgb(216, 216, 71);
     text-decoration: underline;
     font-size: 18px;
+    transition: all 400ms ease;
+}
+
+.plan__ticket:hover{
+    color: red;
+    font-weight: bold;
 }
