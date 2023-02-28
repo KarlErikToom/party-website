@@ -205,9 +205,9 @@ nav{
     background-size: cover;
 }
 .container{
-    margin: 0 15%;
+    margin: 0 24px;
     display: flex;
-    max-width: 100%;
+    width: 100%;
 }
 
 .about__left{
@@ -594,4 +594,112 @@ table{
 .plan__ticket:hover{
     color: red;
     font-weight: bold;
+}
+
+
+
+
+/*CONTACT*/
+
+#contact{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.contact__h2{
+    margin-bottom: 24px;
+}
+
+.contact__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.contact__nav{
+    text-align: center;
+    padding: 15px;
+
+}
+
+.contact__nav--btn{
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 45px;
+    margin-top: 48px;
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)
+}
+
+.contact__form--form{
+    width: 100%;
+}
+.form__control{
+    width: 100%;
+    margin-bottom: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 14px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.contact__form--wrapper{
+    display: flex;
+    
+}
+.contact__form--name{
+    padding-right: 12px;
+    width: 50%;
+
+}
+.contact__form--email{
+    padding-left: 12px;
+    width: 50%;
+}
+
+.contact__form--company{
+    width: 100%;
+}
+
+.contact__form--message{
+    width: 100%;
+}
+
+
+.contact__form--btn{
+    text-align: center;
+}
+
+.contact__btn{
+    padding: 18px 35px;
+    background-color: #ee5007;
+    color: white;
+    font-size: 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    transition: all 600ms ease;
+}
+
+.contact__btn:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: all 600ms ease;
+    
 }

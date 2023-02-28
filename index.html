@@ -233,12 +233,13 @@
                 <li class="plan__list">Standard content</li>
               </ul>
               <div class="plan__ticket--wrapper">
-                <a class="plan__ticket" href="">Buy ticket
+                <a class="plan__ticket" href=""
+                  >Buy ticket
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
               <div class="plan__absolute">
-                <p class="plan__absolute--para">Save up to </p>
+                <p class="plan__absolute--para">Save up to</p>
                 <span class="plan__absolute--span">50%</span>
               </div>
             </div>
@@ -258,7 +259,8 @@
                 <li class="plan__list">Standard content</li>
               </ul>
               <div class="plan__ticket--wrapper">
-                <a class="plan__ticket" href="">Buy ticket
+                <a class="plan__ticket" href=""
+                  >Buy ticket
                   <i class="fa-solid fa-arrow-right"></i>
                 </a>
               </div>
@@ -270,26 +272,51 @@
     <section id="contact">
       <div class="container">
         <div class="contact__wrapper">
-          <h2>Interested? Lets' talk</h2>
+          <div class="contact__h2">
+            <h2>Interested? Lets' talk</h2>
+          </div>
           <nav class="contact__nav">
-            <button class="contact__btn">Contact Form</button>
+            <button class="contact__nav--btn">Contact Form</button>
           </nav>
           <div class="contact__form">
-            <div class="contact__form--name">
-              <input type="text" placeholder="Full Name">
-            </div>
-            <div class="contact__form--email">
-              <input type="email" placeholder="Email address">
-            </div>
-            <div class="contact__form--company">
-              <input type="text" placeholder="Company">
-            </div>
-            <div class="contact__form--message">
-              <textarea name="" id="" cols="30" rows="3"></textarea>
-            </div>
-            <div class="contact__form--btn">
-              <button class="contact__btn" type="submit">Send Message</button>
-            </div>
+            <form action="#" class="contact__form--form">
+              <div class="contact__form--wrapper">
+                <div class="contact__form--name">
+                  <input
+                    class="form__control"
+                    type="text"
+                    placeholder="Full Name"
+                  />
+                </div>
+                <div class="contact__form--email">
+                  <input
+                    class="form__control"
+                    type="email"
+                    placeholder="Email address"
+                  />
+                </div>
+              </div>
+              <div class="contact__form--company">
+                <input
+                  class="form__control"
+                  type="text"
+                  placeholder="Company"
+                />
+              </div>
+              <div class="contact__form--message">
+                <textarea
+                  class="form__control"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="contact__form--btn">
+                <button class="contact__btn" type="submit">Send Message</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
