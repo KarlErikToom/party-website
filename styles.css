@@ -631,6 +631,10 @@ table{
 .contact__nav--btn{
     padding: 15px 25px;
     border-radius: 20px;
+    font-size: 24px;
+    color: rgba(248, 204, 7, 0.945);
+    font-weight: bold;
+    border: none;
 }
 
 .contact__form{
@@ -652,10 +656,10 @@ table{
 .form__control{
     width: 100%;
     margin-bottom: 24px;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 18px;
+    padding-bottom: 18px;
     padding-left: 14px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.322);
     border-radius: 10px;
 }
 
@@ -687,7 +691,7 @@ table{
 }
 
 .contact__btn{
-    padding: 18px 35px;
+    padding: 18px 65px;
     background-color: #ee5007;
     color: white;
     font-size: 18px;
