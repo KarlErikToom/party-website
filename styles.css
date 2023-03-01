@@ -207,7 +207,7 @@ nav{
 .container{
     margin: 0 24px;
     display: flex;
-    width: 100%;
+    
 }
 
 .about__left{
@@ -622,6 +622,10 @@ table{
     
 }
 
+.contact__container{
+    width: 100%;
+}
+
 .contact__nav{
     text-align: center;
     padding: 15px;
@@ -707,3 +711,59 @@ table{
     transition: all 600ms ease;
     
 }
+
+
+/*FOOTER__TOP*/
+
+.footer__top{
+    background-color: #ee5007;
+    padding: 24px 0;
+}
+.footer__top--h2{
+    color: white;
+}
+
+.footer__top--wrapper{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__top--media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__top--links{
+    display: flex;
+    
+}
+
+.footer__top--link{
+    list-style: none;
+    margin-right: 18px;
+    font-size: 18px;
+}
+
+
+
+.footer__img{
+    color: white;
+    padding: 8px;
+    border-radius: 20px;
+    transition: all 1200ms ease;
+    
+}
+
+.footer__img:hover{
+    background-color: rgb(216, 166, 27);
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
