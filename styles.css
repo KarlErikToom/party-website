@@ -595,12 +595,6 @@ table {
 }
 
 /*CONTACT*/
-.google__maps {
-  display: none;
-}
-.google__maps.active{
-    display: flex;
-}
 
 #contact {
   padding: 100px 0;
@@ -651,7 +645,8 @@ table {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  position: relative;
+  height: 400px;
   padding: 45px;
   margin-top: 48px;
   width: 45%;
@@ -659,9 +654,40 @@ table {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-.contact__form--form {
-  width: 100%;
+.google__maps--map.active {
+  display: flex;
 }
+
+.contact__form--form.inactive {
+  display: none;
+}
+.google__maps--map.inactive {
+  display: none;
+}
+
+.contact__nav--btn.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.contact__form--form {
+  width: 90%;
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50;
+  left: 50;
+}
+
+.google__maps--map {
+  width: 90%;
+  height: 90%;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 50;
+  left: 50;
+}
+
 .form__control {
   width: 100%;
   margin-bottom: 24px;

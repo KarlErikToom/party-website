@@ -287,11 +287,13 @@
             <h2>Interested? Lets' talk</h2>
           </div>
           <div class="contact__nav">
-            <button class="contact__nav--btn">Contact Form</button>
-            <button class="contact__nav--btn contact__nav--google">Google Maps</button>
+            <button class="contact__nav--btn contact__nav--contact">Contact Form</button>
+            <button class="contact__nav--btn contact__nav--google">
+              Google Maps
+            </button>
           </div>
-          <div class="contact__form">
-            <form action="#" class="contact__form--form">
+          <div class="contact__form inactive">
+            <form action="#" class="contact__form--form active">
               <div class="contact__form--wrapper">
                 <div class="contact__form--name">
                   <input
@@ -328,10 +330,18 @@
               <div class="contact__form--btn">
                 <button class="contact__btn" type="submit">Send Message</button>
               </div>
+
             </form>
-          </div>
-          <div class="google__maps">
-            hello
+            <iframe
+              class="google__maps--map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123818.23029419236!2d120.89889222226378!3d14.11728707364107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e0!3m2!1sen!2see!4v1682866084215!5m2!1sen!2see"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
