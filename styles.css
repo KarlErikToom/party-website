@@ -37,6 +37,7 @@ small {
 a {
   text-decoration: none;
   color: white;
+  cursor: active;
 }
 
 .header__container {
@@ -61,6 +62,7 @@ a {
 
 #landing {
   width: 100%;
+
   height: 100vh;
   position: relative;
 }
@@ -73,6 +75,9 @@ nav {
   width: 100%;
   z-index: 50;
   transition: all 400ms ease;
+}
+.nav__link--menu {
+  display: none;
 }
 
 nav.sticky {
@@ -136,8 +141,7 @@ nav.sticky {
   justify-content: center;
   align-items: center;
 
-  padding: 354px 0 167px  0;
-  
+  padding: 354px 0 167px 0;
 }
 
 .btn {
@@ -187,6 +191,7 @@ nav.sticky {
   left: 0;
   object-fit: cover;
   width: 100%;
+  max-width: 100%;
   height: 100%;
   z-index: -1;
   max-height: 100vh;
@@ -209,7 +214,7 @@ nav.sticky {
 
 #about {
   padding: 100px 0;
-  max-width: 100%;
+  width: 100%;
   background-image: url(https://templatemo.com/templates/templatemo_583_festava_live/images/edward-unsplash-blur.jpg);
   background-size: cover;
 }
@@ -930,10 +935,25 @@ table {
 
 @media (max-width: 992px) {
   .nav__container {
-    margin: 0 204px;
+    margin: 0 24px;
+    width: 50%;
+  }
+  
+  .nav__brand {
+    font-size: 18px;
   }
   .nav__link {
     padding: 10px 10px;
+    font-size: 16px;
+  }
+  .plans{
+    width: 100%;
+  }
+  .plan__right{
+    margin: 0;
+  }
+  .plan__left{
+    margin-right: 12px;
   }
 
   .footer__bottom--location {
@@ -952,12 +972,28 @@ table {
     font-size: 52px;
   }
 
+  .nav__container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .nav__links {
+    margin: 0;
+  }
+  .nav__link {
+    margin: 0;
+  }
+  .nav__link--primary {
+    font-size: 14px;
+  }
+
   .hero__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 310px;
   }
 
   .about__container {
@@ -995,17 +1031,60 @@ table {
   p {
     font-size: 14px;
   }
+
+  .nav__link--menu {
+    display: flex;
+    font-size: 34px;
+  }
   .header__container {
     margin: 0;
     padding: 12px 48px;
   }
-
+  nav {
+    background-color: black;
+    top: 42px;
+    padding: 12px 0;
+  }
   .nav__container {
+    margin: 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .nav__links {
     display: none;
   }
 
-  .hero__bottom {
-    margin-top: 48px;
+  .nav__link--primary {
+    margin-right: 12px;
+  }
+  .nav__links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 48px;
+    left: -24px;
+    width: 110%;
+    background-color: black;
+    padding: 12px 0;
+    z-index: 1;
+  }
+
+  .nav__links.active li {
+    margin: 6px 0;
+  }
+
+  .nav__links.active a {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 24px 0;
+    padding-left: 12px;
+  }
+  .nav__links.active a:hover {
+    color: red;
   }
 
   .footer__top--wrapper {
