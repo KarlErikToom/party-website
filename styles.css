@@ -37,11 +37,9 @@ small {
 a {
   text-decoration: none;
   color: white;
- 
-  
 }
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
 .header__container {
@@ -597,6 +595,12 @@ table {
 }
 
 /*CONTACT*/
+.google__maps {
+  display: none;
+}
+.google__maps.active{
+    display: flex;
+}
 
 #contact {
   padding: 100px 0;
@@ -630,9 +634,16 @@ table {
   padding: 15px 25px;
   border-radius: 20px;
   font-size: 24px;
-  color: rgba(248, 204, 7, 0.945);
+  color: gray;
   font-weight: bold;
   border: none;
+  transition: all 400ms ease;
+}
+
+.contact__nav--btn:hover {
+  color: yellow;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contact__form {
@@ -942,7 +953,7 @@ table {
     margin: 0 24px;
     width: 50%;
   }
-  
+
   .nav__brand {
     font-size: 18px;
   }
@@ -950,13 +961,13 @@ table {
     padding: 10px 10px;
     font-size: 16px;
   }
-  .plans{
+  .plans {
     width: 100%;
   }
-  .plan__right{
+  .plan__right {
     margin: 0;
   }
-  .plan__left{
+  .plan__left {
     margin-right: 12px;
   }
 
@@ -980,7 +991,6 @@ table {
     width: 90%;
     display: flex;
     justify-content: space-between;
-    
   }
 
   .nav__links {

@@ -9,22 +9,29 @@ window.onscroll = function () {
   }
 };
 
-const menuIcon = document.querySelector('.nav__link--menu');
-const navLinks = document.querySelector('.nav__links');
+const menuIcon = document.querySelector(".nav__link--menu");
+const navLinks = document.querySelector(".nav__links");
 
-menuIcon.addEventListener('click', function() {
-  navLinks.classList.toggle('active');
+menuIcon.addEventListener("click", function () {
+  navLinks.classList.toggle("active");
 });
 
-document.addEventListener('click', function(event) {
-  const isClickInside = menuIcon.contains(event.target) || navLinks.contains(event.target);
+document.addEventListener("click", function (event) {
+  const isClickInside =
+    menuIcon.contains(event.target) || navLinks.contains(event.target);
   if (!isClickInside) {
-    navLinks.classList.remove('active');
+    navLinks.classList.remove("active");
   }
 });
-const menuLink = document.querySelector('.nav__link--menu');
+const menuLink = document.querySelector(".nav__link--menu");
 
-menuLink.addEventListener('click', function(event) {
+menuLink.addEventListener("click", function (event) {
   event.preventDefault();
-  
+});
+
+const googleMaps = document.querySelector(".google__maps");
+const googleButton = document.querySelector(".contact__nav--google");
+
+googleButton.addEventListener("click", function () {
+  googleMaps.classList.toggle("active");
 });
