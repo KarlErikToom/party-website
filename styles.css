@@ -113,6 +113,9 @@ nav.sticky {
   font-size: 18px;
   transition: all 400ms ease;
 }
+.nav__link.active{
+  color: red;
+}
 
 .nav__link:hover {
   color: red;
