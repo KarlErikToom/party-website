@@ -38,9 +38,22 @@ googleButton.addEventListener("click", function () {
   if (!googleButton.classList.contains("disabled")) {
     googleButton.classList.add("disabled");
     googleMaps.classList.toggle("active");
-    if (googleButton.classList.contains("active")) {
-      contactForm.classList.toggle("inactive");
+    if (contactForm.classList.contains("active")) {
+      contactForm.classList.remove("active");
+    }
+    if (contactButton.classList.contains("disabled")) {
+      contactButton.classList.remove("disabled");
     }
   }
 });
 
+contactButton.addEventListener("click", function () {
+  if (!contactForm.classList.contains("active")) {
+    contactForm.classList.add("active");
+    contactButton.classList.add("disabled");
+    if (googleMaps.classList.contains("active")) {
+      googleMaps.classList.remove("active");
+      googleButton.classList.remove("disabled");
+    }
+  }
+});
