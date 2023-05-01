@@ -252,12 +252,50 @@ nav.sticky {
 
 .about__right {
   width: 50%;
+  position: relative;
 }
 
 .about__right--img {
-  width: 95%;
+  width: 85%;
   border-radius: 22px;
+  
 }
+.about__img--bubble{
+  width: 80%;
+  position: absolute;
+  top: 60%;
+  left: 2.5%;
+  width: 80%;
+  height: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(238, 237, 237, 0.685);
+  border-radius: 20px;
+}
+
+.about__img--user{
+  padding: 30px;
+  background-color: yellow;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 24px;
+}
+.fa-user{
+  font-size: 24px;
+}
+
+.about__img--header{
+  font-size: 34px;
+  margin-bottom: 14px;
+}
+.about__img--para{
+  color: rgb(131, 124, 124);
+}
+
 
 /*MEET ARTSISTS*/
 
@@ -654,7 +692,7 @@ table {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 .contact__nav--contact.disabled{
-  
+
 }
 
 .google__maps--map.active {
